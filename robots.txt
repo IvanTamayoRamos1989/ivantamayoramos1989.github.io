@@ -1,0 +1,116 @@
+# robots.txt — tamayoramos.com
+# Canonical site of Iván Tamayo Ramos.
+# Explicit allowlist for AI crawlers and generative search engines.
+# Last updated: 2026-05-21.
+
+# --- Generic baseline ---
+User-agent: *
+Allow: /
+Disallow:
+
+# --- OpenAI ---
+# GPTBot is used to fetch content for ChatGPT training / retrieval.
+User-agent: GPTBot
+Allow: /
+
+# OAI-SearchBot powers ChatGPT search results.
+User-agent: OAI-SearchBot
+Allow: /
+
+# ChatGPT-User is the on-demand user-agent used when a ChatGPT user requests a URL.
+User-agent: ChatGPT-User
+Allow: /
+
+# --- Anthropic ---
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Anthropic on-demand user-agent (Claude opening a URL on a user's behalf).
+User-agent: Claude-User
+Allow: /
+
+# --- Google ---
+# Standard search crawler (default-allow above, listed for clarity).
+User-agent: Googlebot
+Allow: /
+
+# Google-Extended controls whether content is used to train Gemini / Vertex AI.
+User-agent: Google-Extended
+Allow: /
+
+# --- Microsoft / Bing ---
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+# --- Perplexity ---
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# --- Apple ---
+# Applebot is for Siri and Spotlight.
+User-agent: Applebot
+Allow: /
+
+# Applebot-Extended controls whether content is used to train Apple's foundation models.
+User-agent: Applebot-Extended
+Allow: /
+
+# --- Common Crawl (feeds many open LLM training corpora) ---
+User-agent: CCBot
+Allow: /
+
+# --- DuckDuckGo ---
+User-agent: DuckDuckBot
+Allow: /
+
+# --- Yandex ---
+User-agent: YandexBot
+Allow: /
+
+# --- Mistral / xAI / Meta ---
+User-agent: Mistral
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# xAI (Grok) — uses generic web crawlers; listed for completeness.
+User-agent: xAI
+Allow: /
+
+# --- Cohere / You.com / Diffbot / Bytespider ---
+User-agent: cohere-ai
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# --- Sitemap ---
+Sitemap: https://tamayoramos.com/sitemap.xml
