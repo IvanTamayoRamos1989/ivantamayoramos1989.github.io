@@ -10,6 +10,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/site.css">
+<style>
+  /* Report stills stay contained; plan plates use the default wrap width. */
+  .gallery{padding-bottom:0}
+  .gallery .shot.still{
+    max-width:760px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .gallery .shot.still img{
+    width:100%;
+    height:auto;
+    object-fit:contain;
+  }
+</style>
 </head>
 <body>
 
@@ -33,7 +47,7 @@
 <header class="project-hero">
   <div class="wrap">
     <div class="project-kicker">
-      <div class="crumb label"><a href="/#works">Works</a> · 02 / 15</div>
+      <div class="crumb label"><a href="/#works">Works</a> · 02 / 17</div>
     </div>
     <div class="project-head">
       <div class="project-title">
@@ -68,23 +82,96 @@
 
   <div class="facts">
     <div class="copy">
-      <p>The Republic of San Marino is a landlocked microstate in Italy: 61.2&nbsp;km², about 35,000 people, nine <em>castelli</em>. The capital, the City of San Marino, sits on Monte Titano and is a UNESCO World Heritage site. About two million tourists visit each year, mostly from Italy.</p>
-      <p>The 2024 cohort combined a comprehensive analysis with a holistic strategy inspired by the 15-minute city. A Decision-Support Tool (Grasshopper / Rhinoceros, ShapeDiver) tracks 32 measurable targets. Three case-study interventions concentrate on Borgo Maggiore and its link to the historic capital.</p>
-      <p><strong>Borgo Maggiore town square.</strong> Reconstruct the historic centre by replacing parking with public space. To reach 1&nbsp;m² of public space per resident within 500&nbsp;m, the historic centre needs an additional 6,948&nbsp;m² of paved public space; the square intervention removes 89 parking spots. New permeable parking is proposed on disused camping grounds at the outskirts, with pedestrian links across the San Marino Highway.</p>
-      <p><strong>National Transportation Hub.</strong> Transform the parking lot at the Borgo Maggiore cable-car station into a national hub where a simplified five-line bus network converges: Borgo Maggiore–Falciano, Borgo Maggiore–San Marino, West Loop, East Loop, and Dogana–Rimini.</p>
-      <p><strong>Shuttle and active mobility.</strong> A new Borgo Maggiore–San Marino shuttle, with one-way streets and space for bicycles and pedestrians, links the hub to the historic-centre gates. Piazzale Cava Antica, now a parking lot, would become a public square at the shuttle terminus.</p>
+      <p>The Republic of San Marino is a landlocked microstate surrounded by Italy, between the Apennines and the Adriatic: 61.2&nbsp;km², about 35,000 people, nine municipalities (<em>castelli</em>). The capital, the City of San Marino, sits on Monte Titano (749&nbsp;m) and is a UNESCO World Heritage site. Borders have been unchanged since 1463. Two heads of state (<em>capitani reggenti</em>) are elected every six months. About two million tourists visit each year, mostly from Italy. The economy is tourism, banking and manufacturing.</p>
+      <p>San Marino has no ports, airports or railway stations of its own. It is among the world’s most car-dependent countries: about 1,300 cars per 1,000 inhabitants; transport is 60% of national greenhouse-gas emissions. Public transport (eight bus lines plus the 1959 Funivia cable car, ~500,000 passengers/year) reaches 98% of the population but is the preferred commute for only 7%. Only 20% of buildings have direct pedestrian infrastructure. Borgo Maggiore is the street-network central hub.</p>
     </div>
     <dl>
       <div class="pair"><dt>Place</dt><dd>Republic of San Marino</dd></div>
       <div class="pair"><dt>Area</dt><dd>61.2 km²</dd></div>
       <div class="pair"><dt>Population</dt><dd>~35,000</dd></div>
       <div class="pair"><dt>Castelli</dt><dd>Nine</dd></div>
+      <div class="pair"><dt>Cars</dt><dd>1,300 / 1,000 inhab.</dd></div>
+      <div class="pair"><dt>Themes</dt><dd>5 · 32 targets</dd></div>
       <div class="pair"><dt>DST</dt><dd>32 targets · ShapeDiver</dd></div>
     </dl>
   </div>
 
+  <div class="facts">
+    <div class="copy">
+      <p><strong>Strategy.</strong> The 2024 cohort produced a comprehensive layer analysis (climate, mobility, buildings, resources, culture, economy) and a Strategy for Sustainable Development inspired by the 15-minute city and Cittaslow. Three scales / three goals: Town — Vibrant Towns; National — Well-Connected Network; International — International Attractor. A Strategic Framework of 32 measurable targets grouped in five themes (Mobility, Environment, Urban Planning &amp; Development, Culture &amp; Heritage, Social &amp; Economic Activity). Catchments and buffers were built in QGIS; scores were calculated in Grasshopper / Rhinoceros 3D.</p>
+      <p>A prototype Decision-Support Tool on ShapeDiver puts the framework on an interactive map (English/Italian). Overview compares the 12 towns. Builder Mode flags targets under 75% of benchmark. Drawing Mode lets a user sketch an intervention (e.g. a public-space polygon) and re-scores the town in real time. Example: adding public space in Borgo Maggiore; 6,948&nbsp;m² is what the historic centre needs to hit 1&nbsp;m² of paved public space per resident within 500&nbsp;m.</p>
+    </div>
+  </div>
+
   <div class="gallery">
     <figure class="shot">
+      <img src="08-evaluation.jpg" alt="Country map of San Marino with radar charts comparing twelve town centres across five themes.">
+      <div class="meta">
+        <span class="idx">08</span>
+        <span class="cap">Twelve town centres scored against five themes</span>
+        <span class="loc">Evaluation</span>
+      </div>
+    </figure>
+    <figure class="shot">
+      <img src="09-dst.jpg" alt="Decision-Support Tool screenshots on ShapeDiver: overview of twelve towns, Builder Mode, and Drawing Mode.">
+      <div class="meta">
+        <span class="idx">09</span>
+        <span class="cap">Decision-Support Tool on ShapeDiver</span>
+        <span class="loc">DST</span>
+      </div>
+    </figure>
+  </div>
+
+  <div class="facts">
+    <div class="copy">
+      <p><strong>Interventions.</strong> The three moves concentrate on Borgo Maggiore and its link to the historic capital — reconstruct the town square; convert disused camping grounds to permeable parking with pedestrian crossings of the San Marino Highway; simplify the bus network into a National Transport Hub at the cable-car station; reorganise the Borgo Maggiore–San Marino road as one-way streets with a shuttle, bikes and pedestrians. Piazzale Cava Antica (now parking) becomes a public square at the shuttle terminus, at the historic-centre gates.</p>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <figure class="shot">
+      <img src="04-interventions-map.jpg" alt="3D satellite overview of the City of San Marino historic-centre entrance, Borgo Maggiore town square, National Transportation Hub, shuttle connection, pedestrian links, and parking lot.">
+      <div class="meta">
+        <span class="idx">04</span>
+        <span class="cap">Three interventions between Borgo Maggiore and the historic capital</span>
+        <span class="loc">Overview</span>
+      </div>
+    </figure>
+  </div>
+
+  <div class="facts">
+    <div class="copy">
+      <p><strong>Town square.</strong> Borgo Maggiore is the most populous town but its historic square is parking. Removing cars raises the Public Space score from 0% to 67% (DST Builder Mode) and removes 89 parking spots (parking score 75% → 62%). Permeable parking on the disused camping grounds at the outskirts recovers the parking benchmark and can take tourist cars out of the UNESCO centre. Two new pedestrian connections across the highway link 26 buildings directly to the urban core.</p>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <figure class="shot">
+      <img src="05-town-square-plan.jpg" alt="Borgo Maggiore town-square render and 3D plan of the square, two pedestrian connections across the San Marino Highway, and new parking on disused camping grounds.">
+      <div class="meta">
+        <span class="idx">05</span>
+        <span class="cap">Town square, highway crossings, and outskirts parking</span>
+        <span class="loc">Town square</span>
+      </div>
+    </figure>
+  </div>
+
+  <div class="facts">
+    <div class="copy">
+      <p><strong>National Transportation Hub.</strong> Five bus lines — Borgo Maggiore–Falciano (along the San Marino Highway through Domagnano, Serravalle, Dogana, Falciano); Borgo Maggiore–San Marino shuttle; West Loop (Acquaviva, Casole &amp; Murata, Fiorentino, Chiesanuova); East Loop (Faetano, Montegiardino, Fiorentino); Dogana–Rimini (international). The parking lot in front of the cable-car station becomes the hub: intermodal connections and a tourist information centre.</p>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <figure class="shot">
+      <img src="06-bus-network.jpg" alt="National five-line bus map and hub render at the Borgo Maggiore cable-car station.">
+      <div class="meta">
+        <span class="idx">06</span>
+        <span class="cap">Five-line bus network and hub at the cable-car station</span>
+        <span class="loc">Hub</span>
+      </div>
+    </figure>
+    <figure class="shot still">
       <img src="02-transport-hub.jpg" alt="National Transportation Hub plaza at the Borgo Maggiore cable-car station: permeable paving, bus shelter, map kiosk, and San Marino flag." width="330" height="225">
       <div class="meta">
         <span class="idx">02</span>
@@ -92,7 +179,24 @@
         <span class="loc">Hub</span>
       </div>
     </figure>
+  </div>
+
+  <div class="facts">
+    <div class="copy">
+      <p><strong>Shuttle.</strong> A loop through the capital terminating at Piazzale Cava Antica on the south side of the walls. One-way streets follow bus travel so cycle lanes and wide sidewalks can be added. Together with the existing cable car this completes a tourist loop: leave the car at the new Borgo Maggiore parking, ride one public mode up, walk the historic city, return by the other. That cuts parking demand around the capital so historic squares can be reclaimed.</p>
+    </div>
+  </div>
+
+  <div class="gallery">
     <figure class="shot">
+      <img src="07-shuttle-plan.jpg" alt="Shuttle-loop map on one-way streets and a street render with a cycle lane and shuttle.">
+      <div class="meta">
+        <span class="idx">07</span>
+        <span class="cap">One-way shuttle loop, cycle lane, and Piazzale Cava Antica terminus</span>
+        <span class="loc">Shuttle</span>
+      </div>
+    </figure>
+    <figure class="shot still">
       <img src="03-shuttle.jpg" alt="Street with a dedicated cycle lane, planters, pedestrians, and a white-and-teal shuttle on the roadway beside a café terrace." width="330" height="225">
       <div class="meta">
         <span class="idx">03</span>
@@ -124,7 +228,7 @@
 
   <div class="back-row">
     <a href="/#works">← Works</a>
-    <span class="label">02 / 15</span>
+    <span class="label">02 / 17</span>
   </div>
 </section>
 
